@@ -8,10 +8,10 @@ from pizzas.PizzaType import PizzaType
 from pizzas.VeggiePizza import VeggiePizza
 
 
-class NYStylePizzaStore:
+class NYStylePizzaStore(PizzaStore):
     def create_pizza(self, pizza_type: PizzaType) -> Pizza:
         ingredient_factory = NYPizzaIngredientFactory()
-        pizza = none
+        pizza = None
 
         if pizza_type == PizzaType.CHEESE:
             pizza = CheesePizza(ingredient_factory)
@@ -26,6 +26,7 @@ class NYStylePizzaStore:
             pizza.set_name("New York Style Clam Pizza")
 
         elif pizza_type == PizzaType.VEGGIE:
+            pizza = VeggiePizza(ingredient_factory)
             pizza.set_name("New York Style Veggie Pizza")
 
         return pizza
