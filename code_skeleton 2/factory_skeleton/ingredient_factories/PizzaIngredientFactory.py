@@ -1,5 +1,4 @@
 from abc import ABC, abstractmethod
-from typing import List
 
 from ingredients.cheese.Cheese import Cheese
 from ingredients.clams.Clams import Clams
@@ -10,10 +9,11 @@ from ingredients.veggies.Veggies import Veggies
 
 # ABSTRACT Factory Interface
 # declares one "create" method per ingredient
-# it doesn't know how to make any of them - thats left to concrete subclasses (NY, Chicago, etc.)
+# it doesn't know how to make any of them -
+# thats left to concrete subclasses (NY, Chicago, etc.)
 
 
-class PizzaIngredientFactory:
+class PizzaIngredientFactory(ABC):
     @abstractmethod
     def create_cheese(self) -> Cheese:
         pass

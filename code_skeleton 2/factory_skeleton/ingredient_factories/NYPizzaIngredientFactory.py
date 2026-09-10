@@ -1,7 +1,3 @@
-from ..ingredients.veggies.Veggies import Veggies
-from ..ingredients.pepperoni.Pepperoni import Pepperoni
-from ..ingredients.dough.Dough import Dough
-from ..ingredients.clams.Clams import Clams
 from ingredient_factories.PizzaIngredientFactory import PizzaIngredientFactory
 from ingredients.cheese.ReggianoCheese import ReggianoCheese
 from ingredients.clams.FreshClams import FreshClams

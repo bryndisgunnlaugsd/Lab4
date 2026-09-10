@@ -1,7 +1,6 @@
 from ingredient_factories.PizzaIngredientFactory import PizzaIngredientFactory
 from pizzas.Pizza import Pizza
 
-# Same thing as CheesePizza
 
 class PepperoniPizza(Pizza):
 
